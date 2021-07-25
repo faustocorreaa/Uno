@@ -53,5 +53,59 @@ public class GroupOfCards
     public void setSize(int givenSize) {
         size = givenSize;
     }
+
+	/**
+	 * 
+	 * @param card
+	 */
+	public Card Draw2(Card card) {
+		// TODO - implement GroupOfCards.Draw2
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param card
+	 */
+	public Card Reverse(Card card) {
+		// TODO - implement GroupOfCards.Reverse
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param card
+	 */
+	public Card Skip(Card card) {
+		// TODO - implement GroupOfCards.Skip
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param card
+	 */
+	public Card Wild(Card card) {
+		// TODO - implement GroupOfCards.Wild
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param card
+	 */
+	public Card WildDraw(Card card) {
+		// TODO - implement GroupOfCards.WildDraw
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param card
+	 */
+	public Card Blank(Card card) {
+		// TODO - implement GroupOfCards.Blank
+		throw new UnsupportedOperationException();
+	}
     
 }//end class

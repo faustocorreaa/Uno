@@ -22,5 +22,32 @@ public abstract class Card
     
     @Override
     public abstract String toString();
+
+	public Color getColor() {
+		return this.color;
+	}
+
+	/**
+	 * 
+	 * @param color
+	 */
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+	public CardValue getCardValue() {
+		return this.cardValue;
+	}
+
+	/**
+	 * 
+	 * @param cardValue
+	 */
+	public void setCardValue(CardValue cardValue) {
+		this.cardValue = cardValue;
+	}
+
+	private Color color;
+	private CardValue cardValue;
     
 }

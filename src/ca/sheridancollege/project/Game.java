@@ -59,6 +59,30 @@ public abstract class Game
      */
     public abstract void declareWinner();
 
+	public String RegisterPlayers() {
+		// TODO - implement Game.RegisterPlayers
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param Players
+	 */
+	public void PointPerPlayer(ArrayList<Player> Players) {
+		// TODO - implement Game.PointPerPlayer
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param players
+	 * @param cards
+	 */
+	public void Scoring(ArrayList<Player> players, ArrayList<Card> cards) {
+		// TODO - implement Game.Scoring
+		throw new UnsupportedOperationException();
+	}
+
    
     
 }//end class
