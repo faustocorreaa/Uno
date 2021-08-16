@@ -5,6 +5,8 @@
  */
 package ca.sheridancollege.project;
 
+import java.util.ArrayList;
+
 /**
  * A class that models each Player in the game. Players have an identifier,
  * which should be unique.
@@ -16,6 +18,8 @@ public abstract class Player {
     private String playerID; //the unique ID for this player
     private String userName; //the userName for this player
     private String password; //the password for this player
+    private ArrayList<Card> cards = new ArrayList();
+    int playerNumber, numberOfCards;
 
     /**
      * A constructor that allows you to set the player's unique ID
@@ -24,6 +28,24 @@ public abstract class Player {
      */
     public Player(String name) {
         playerID = name;
+    }
+
+    public void addCardToDeck(Card c) {
+        cards.add(c);
+    }
+
+    public Card removeCardFromDeck(int index) {
+        return cards.remove(index);
+    }
+
+    public void displayPlayerDeck() {
+
+        System.out.println(playerID + "'s cards:");
+        int i = 1;
+        for (Card c : cards) {
+            System.out.println(i+" "+c);
+            i++;
+        }
     }
 
     /**
@@ -52,11 +74,14 @@ public abstract class Player {
      *
      * @param userName
      * @param password
-     * @return 
+     * @return
      */
     public String login(String userName, String password) {
         // TODO - implement Player.login
         throw new UnsupportedOperationException();
+    }
+    public ArrayList<Card> getCards() {
+        return cards;
     }
 
     /**

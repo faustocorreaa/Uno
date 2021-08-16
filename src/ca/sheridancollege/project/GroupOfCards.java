@@ -35,6 +35,10 @@ public class GroupOfCards
         return cards;
     }
     
+    public void setCards (ArrayList<Card> cards){
+        this.cards = cards;
+    }
+    
     public void shuffle()
     {
         Collections.shuffle(cards);
@@ -47,6 +51,15 @@ public class GroupOfCards
         return size;
     }
 
+    public Card removeCard(int i) {
+        Card c = cards.remove(i);
+        size = cards.size();
+        return c;
+    }
+    
+    public void addCard(Card card) {
+        cards.add(card);
+    }
     /**
      * @param givenSize the max size for the group of cards
      */
