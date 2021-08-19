@@ -15,8 +15,9 @@ public abstract class Card {
      * @return a String representation of a card. Could be an UNO card, a
      * regular playing card etc.
      */
+    //Code re-usability is achieved through method overriding
     @Override
-    public abstract String toString();//abstract class 
+    public abstract String toString();//using abstract method, security is achieved to the code 
             //getter method for colour card
     public Color getColor() {
         return this.color;
