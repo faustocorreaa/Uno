@@ -10,9 +10,17 @@ import java.util.ArrayList;
 /**
  * A class that models each Player in the game. Players have an identifier,
  * which should be unique.
- *
  * @author dancye, 2018
  */
+
+
+/*
+ *In this class security for the code is achieved through abstraction
+ *@modifiers: Fausto Correa, Kamaksh Dave, Ruchita Soni, Alpa Gandhi
+ *Date: 19 August 2021
+ */
+
+
 public abstract class Player {
 
     private String playerID; //the unique ID for this player
@@ -29,15 +37,16 @@ public abstract class Player {
     public Player(String name) {
         playerID = name;
     }
-
+ //Method for adding card to deck
     public void addCardToDeck(Card c) {
         cards.add(c);
     }
-
+ 
+ //Method for removing card from deck
     public Card removeCardFromDeck(int index) {
         return cards.remove(index);
     }
-
+  //Method helps to display player Deck
     public void displayPlayerDeck() {
 
         System.out.println(playerID + "'s cards:");
@@ -51,6 +60,7 @@ public abstract class Player {
     /**
      * @return the playerID
      */
+    //Getter and Setter method for playerID
     public String getPlayerID() {
         return playerID;
     }
@@ -76,10 +86,12 @@ public abstract class Player {
      * @param password
      * @return
      */
+     //This method helps to login the player
     public String login(String userName, String password) {
-        // TODO - implement Player.login
+     // TODO - implement Player.login
         throw new UnsupportedOperationException();
     }
+    //Method returns the card
     public ArrayList<Card> getCards() {
         return cards;
     }
@@ -88,11 +100,12 @@ public abstract class Player {
      *
      * @param playerID
      */
+    //This method helps to logout the player
     public void logout(String playerID) {
-        // TODO - implement Player.logout
+    // TODO - implement Player.logout
         throw new UnsupportedOperationException();
     }
-
+   //Getter and Setter method starts for username and password
     public String getUserName() {
         return this.userName;
     }
