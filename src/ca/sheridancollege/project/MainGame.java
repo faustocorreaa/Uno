@@ -15,6 +15,7 @@ import java.util.Scanner;
 import scannerutils.ScannerUtils;
 
 //Start of class
+//This class interact with the user. It provides delegation 
 public class MainGame {
 
     static int totalNumberOfCards = 108;
