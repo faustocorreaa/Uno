@@ -5,12 +5,17 @@
  */
 package ca.sheridancollege.project;
 
-/**
- *
- * @author fausto.correa
- */
-public class PlayerImp extends Player {
+/*
 
+ *@modifier Fausto Correa, Kamaksh Dave, Ruchita Soni, Alpa Gandhi
+ *Date : 19 August 2021
+ */
+
+/*
+*In this class code re-usability is achieved through inheritance using extends keyword 
+*/
+public class PlayerImp extends Player {
+//Argumented constructor
     public PlayerImp(String name) {
         super(name);
     }
