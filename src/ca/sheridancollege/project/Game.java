@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * @author dancye, 2018
  */
 public abstract class Game {
-
+// default modifier of Game class
     private final String gameName;//the title of the game
     private ArrayList<Player> players;// the players of the game
 
@@ -87,6 +87,7 @@ public abstract class Game {
             }
 
         }
+        // It displays the draws and cards which are added to deck
         System.out.println(player.getPlayerID() + " draws " + cards + " cards. Cards are added to deck!");
         for (int i = 0; i < cards; i++) {
             //player.addCardToDeck(popExtraDeck());
