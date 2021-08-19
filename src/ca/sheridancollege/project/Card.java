@@ -1,31 +1,23 @@
-/**
- * SYST 17796 Project Winter 2019 Base code.
- * Students can modify and extend to implement their game.
- * Add your name as a modifier and the date!
- */
+
 package ca.sheridancollege.project;
 
 import java.util.Random;
 
 /**
- * A class to be used as the base Card class for the project. Must be general
- * enough to be instantiated for any Card game. Students wishing to add to the
- * code should remember to add themselves as a modifier.
- *
- * @author dancye, 2018
+ * @author Fausto correa , Kamaksh Dave, Ruchita soni, Alpa Gandhi
+ * date : 19 August 2021
+ * Description: A Card containing the values and colours 
  */
 public abstract class Card {
     //default modifier for child classes
 
     /**
-     * Students should implement this method for their specific children classes
-     *
      * @return a String representation of a card. Could be an UNO card, a
      * regular playing card etc.
      */
     @Override
-    public abstract String toString();
-
+    public abstract String toString();//abstract class 
+            //getter method for colour card
     public Color getColor() {
         return this.color;
     }
@@ -34,6 +26,7 @@ public abstract class Card {
         Random rand = new Random();
         int colour = rand.nextInt(4);
         int cardType = rand.nextInt(15);
+       //colour of the cards 
         switch (colour) {
             case 0:
                 color = Color.RED;
@@ -51,7 +44,7 @@ public abstract class Card {
                 color = Color.NO_COLOR;
                 break;
         }
-
+           // Cards with number value 
         switch (cardType) {
             case 0:
                 cardValue = CardValue.ZERO;
@@ -84,10 +77,10 @@ public abstract class Card {
                 cardValue = CardValue.NINE;
                 break;
             case 10:
-                cardValue = CardValue.SKIP;
+                cardValue = CardValue.SKIP; //Skip card
                 break;
             case 11:
-                cardValue = CardValue.REVERSE;
+                cardValue = CardValue.REVERSE; //Reverse Card
                 break;
             case 12:
                 cardValue = CardValue.DRAWTWO;// "Draw Two (+2)"; 
@@ -104,7 +97,7 @@ public abstract class Card {
     }
 
     public void setCardValueNumber(int cardType) {
-
+              // Card Value Number 
         switch (cardType) {
             case 0:
                 cardValue = CardValue.ZERO;
@@ -157,6 +150,7 @@ public abstract class Card {
     }
 
     public void setColorNumber(int colour) {
+                //setting the colour number value 
         switch (colour) {
             case 0:
                 color = Color.RED;
@@ -178,6 +172,7 @@ public abstract class Card {
      *
      * @param color
      */
+    //setting colour method
     public void setColor(Color color) {
         this.color = color;
     }
