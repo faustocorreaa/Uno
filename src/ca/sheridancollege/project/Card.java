@@ -29,7 +29,7 @@ public abstract class Card {
     public Color getColor() {
         return this.color;
     }
-
+      //RandomCard switch case
     public void setRandomCard() {
         Random rand = new Random();
         int colour = rand.nextInt(4);
