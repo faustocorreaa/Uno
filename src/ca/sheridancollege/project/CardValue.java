@@ -5,6 +5,7 @@
  * Description: A enumerated class for cardValue  
  */
 //enumerated class containing value of cards
+//Value safety and type safety is created, using enumenaration datatype 
 public enum CardValue {
 	ZERO,
 	ONE,
