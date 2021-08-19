@@ -4,16 +4,17 @@
  * and open the template in the editor.
  */
 package ca.sheridancollege.project;
-
+/**
+ * @author Fausto correa , Kamaksh Dave, Ruchita soni, Alpa Gandhi
+ * date : 19 August 2021
+ * Description: A Main class for playing the game  
+ */
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 import scannerutils.ScannerUtils;
 
-/**
- *
- * @author fausto.correa
- */
+//Start of class
 public class MainGame {
 
     static int totalNumberOfCards = 108;
@@ -32,6 +33,7 @@ public class MainGame {
     /**
      * @param args the command line arguments
      */
+    //Start of main class
     public static void main(String[] args) {
         // TODO code application logic here
         String givenName = "NewGame";
@@ -55,7 +57,8 @@ public class MainGame {
                     choice = myScannerUtils.getIntegerInput(prompt, myScanner); //Number of players to create
 
                     if (choice == 99) {
-                        //player.addCardToDeck(popExtraDeck());  		//player chooses to draw card from extra deck
+                        //player.addCardToDeck(popExtraDeck());  	
+                        //player chooses to draw card from extra deck
                         player.addCardToDeck(totalDeck.removeCard(totalDeck.getSize() - 1));
                         play(player, 99);
                     } else if (choice == 100) {
@@ -134,7 +137,7 @@ public class MainGame {
                                 }
                             } else if (playingCard.getCardValue() == CardValue.WILD) {
 
-                                System.out.println("Choose your colour:");
+                                System.out.println("Choose your colour:");//Choose the colour of your card
 
                                 prompt = "\"1.Red\\t2.Yellow\\t3.Green\\t4.Blue\"";
                                 choice = myScannerUtils.getIntegerInput(prompt, myScanner); //Number of players to create
@@ -315,6 +318,6 @@ public class MainGame {
             //player.addCardToDeck(popExtraDeck());
             player.addCardToDeck(totalDeck.removeCard(totalDeck.getSize() - 1));
         }
-    }
+    }//End of main class
 
-}
+}//End of class
